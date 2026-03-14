@@ -1,0 +1,16 @@
+{
+  "name": "Distrileco - Harold Marin",
+  "short_name": "Distrileco",
+  "description": "Tarjeta Digital de Contacto Distrileco",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0056b3",
+  "theme_color": "#0056b3",
+  "icons": [
+    {
+      "src": "logodistrileco.PNG",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
