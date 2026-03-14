@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #0056b3; /* Azul Distrileco */
-            --secondary-color: #25d366; /* Verde WhatsApp */
+            --primary-color: #0056b3; 
+            --secondary-color: #25d366; 
             --bg-color: #f4f7f6;
             --text-color: #333;
         }
@@ -28,8 +28,8 @@
             background: white;
             width: 90%;
             max-width: 400px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
             overflow: hidden;
             text-align: center;
             padding-bottom: 20px;
@@ -38,87 +38,95 @@
 
         .header {
             background-color: var(--primary-color);
-            padding: 30px 20px;
+            padding: 35px 20px;
             color: white;
         }
 
         .logo {
-            width: 130px;
+            width: 140px;
             height: auto;
-            margin-bottom: 10px;
-            border-radius: 10px;
+            margin-bottom: 12px;
+            border-radius: 12px;
             background: white;
-            padding: 5px;
+            padding: 8px;
         }
 
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin: 10px 0 5px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .job-title {
-            font-size: 0.9rem;
-            opacity: 0.9;
+            font-size: 0.95rem;
+            opacity: 0.95;
             font-weight: 400;
         }
 
         .content {
-            padding: 20px;
+            padding: 25px 20px;
         }
 
         .btn-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            padding: 0 10px;
+            gap: 14px;
         }
 
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 14px;
+            padding: 15px;
             border-radius: 50px;
             text-decoration: none;
             color: white;
             font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transform: scale(1.03);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
 
         .btn i {
             margin-right: 12px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
-        /* Colores de botones */
+        /* Paleta de colores */
+        .btn-catalog { background: linear-gradient(45deg, #e63946, #b91d1d); }
+        .btn-gps { background: linear-gradient(45deg, #4285F4, #34a853); }
         .btn-whatsapp { background-color: #25d366; }
         .btn-chatbot { background-color: #00a884; }
-        .btn-catalog { background-color: #e63946; } /* Rojo llamativo para catálogo */
-        .btn-gps { background-color: #4285F4; } /* Azul Google */
         .btn-web { background-color: #343a40; }
         .btn-facebook { background-color: #1877f2; }
-        .btn-instagram { background-color: #e4405f; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 
         .footer {
             margin-top: 20px;
             padding: 0 20px;
-            font-size: 0.85rem;
-            color: #555;
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #0056b3;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
         }
 
         .brand-highlight {
             color: #d4af37;
             font-weight: bold;
-            margin-top: 10px;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -139,7 +147,7 @@
                 </a>
 
                 <a href="https://www.google.com/maps/search/?api=1&query=Carrera+21+B+No+13A+64+barrio+colinas+del+portal+Caucasia" target="_blank" class="btn btn-gps">
-                    <i class="fas fa-map-marker-alt"></i> VER UBICACIÓN (GPS)
+                    <i class="fas fa-map-marked-alt"></i> CÓMO LLEGAR (GPS)
                 </a>
 
                 <a href="https://wa.me/573117700431" class="btn btn-whatsapp">
@@ -147,7 +155,7 @@
                 </a>
 
                 <a href="https://wa.me/573206134987" class="btn btn-chatbot">
-                    <i class="fas fa-robot"></i> Chatbot de Pedidos
+                    <i class="fas fa-robot"></i> Chatbot Pedidos
                 </a>
 
                 <a href="https://haroldco45.github.io/vibras-positivas-apps/distrileco/index.html" class="btn btn-web">
@@ -166,9 +174,14 @@
         </div>
 
         <div class="footer">
+            <div class="brand-highlight">✨ Vibras Positivas ✨</div>
             <p>Atención a Clientes y Proveedores en Oficina</p>
             <p>Marcas Propias: <strong>SUPERARROZ Y VISTAHERMOSA</strong></p>
-            <div class="brand-highlight">✨ Vibras Positivas ✨</div>
+            
+            <div class="copyright">
+                TARJETA DIGITAL DESARROLLADA POR VIBRAS POSITIVAS<br>
+                DERECHOS DE AUTOR © 2026 | 3117700431
+            </div>
         </div>
     </div>
 
