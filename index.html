@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Sánchez - Distrileco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #003d7a;
+            --whatsapp: #25d366;
+            --facebook: #1877F2;
+            --instagram: #E4405F;
+            --bg: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            width: 100%;
+            max-width: 380px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 40px 20px 60px;
+        }
+
+        .logo-container {
+            background: white;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto -65px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-container img {
+            width: 90%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .info {
+            margin-top: 75px;
+            padding: 0 20px;
+        }
+
+        .info h1 {
+            font-size: 22px;
+            color: var(--primary);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .info p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 10px;
+            font-weight: bold;
+        }
+
+        .cobertura {
+            background: #e7f1ff;
+            margin: 0 20px 20px;
+            padding: 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #003d7a;
+            border-left: 4px solid var(--primary);
+        }
+
+        .grid {
+            padding: 0 20px 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .btn i { margin-right: 10px; font-size: 1.2em; }
+        .btn-wa { background: var(--whatsapp); }
+        .btn-bot { background: #128C7E; }
+        .btn-call { background: #007bff; }
+        .btn-pdf { background: #ffc107; color: #000; }
+        .btn-fb { background: var(--facebook); }
+        .btn-ig { background: var(--instagram); }
+        .btn-web { background: #6610f2; }
+
+        .gps-link {
+            display: block;
+            margin: 0 20px 20px;
+            padding: 12px;
+            background: #fdf2f2;
+            border: 1px solid #ffcccc;
+            border-radius: 12px;
+            color: #d32f2f;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f9f9f9;
+            padding: 20px;
+            font-size: 10px;
+            color: #999;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card" id="main-card">
+    <div class="header">
+        <div class="logo-container">
+            <img src="logodistrileco.PNG" alt="Logo Distrileco">
+        </div>
+    </div>
+
+    <div class="info">
+        <h1>Alexander Sánchez</h1>
+        <p>ASESOR COMERCIAL - DISTRILECO</p>
+    </div>
+
+    <div class="cobertura">
+        <i class="fas fa-truck"></i> <b>Zonas que atiende:</b><br>
+        Valdivia, Caucasia, El Bagre y Zaragoza.
+    </div>
+
+    <div class="grid">
+        <a href="https://wa.me/573113896080" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Alexander</a>
+        <a href="https://wa.me/573206134987" class="btn btn-bot"><i class="fas fa-robot"></i> Chatbot Pedidos</a>
+        <a href="tel:+573113896080" class="btn btn-call"><i class="fas fa-phone"></i> Llamar Directo</a>
+        <a href="catalogod.pdf" target="_blank" class="btn btn-pdf"><i class="fas fa-file-pdf"></i> Ver Catálogo</a>
+        <a href="https://haroldco45.github.io/vibras-positivas-apps/distrileco/index.html" class="btn btn-web"><i class="fas fa-globe"></i> App Web Oficial</a>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <a href="https://www.facebook.com/share/14UHAwvBqu3/" class="btn btn-fb"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/distrileco_caucasia?igsh=MTJjcWZmbzd4ODJsbQ==" class="btn btn-ig"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Carrera+2+Diagonal+25+No+2-25+barrio+el+carmen+Caucasia" target="_blank" class="gps-link">
+        <i class="fas fa-map-marker-alt"></i> ABRIR GPS (Google Maps)<br>
+        Carr. 2 Diag 25 #2-25, Barrio El Carmen
+    </a>
+
+    <div class="footer">
+        <p>Generado: <span id="fecha"></span></p>
+        <p>App desarrollada por <b>Vibras Positivas (3117700431)</b><br>
+        © Derechos de Autor 2026</p>
+    </div>
+</div>
+
+<script>
+    // Fecha y hora real de Colombia
+    const options = { timeZone: 'America/Bogota', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+    document.getElementById('fecha').innerText = new Date().toLocaleString('es-CO', options);
+
+    // CONTROL DE SUBSCRIPCIÓN (Vencimiento 14 de marzo 2027)
+    const vencimiento = new Date('2027-03-14');
+    if (new Date() > vencimiento) {
+        document.getElementById('main-card').innerHTML = `<div style="padding:100px 20px;"><h2>Suscripción Vencida</h2><p>Contacte a Vibras Positivas para renovar.</p></div>`;
+    }
+</script>
+
+</body>
+</html>
