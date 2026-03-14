@@ -33,6 +33,7 @@
             overflow: hidden;
             text-align: center;
             padding-bottom: 20px;
+            margin: 20px;
         }
 
         .header {
@@ -42,7 +43,7 @@
         }
 
         .logo {
-            width: 120px;
+            width: 130px;
             height: auto;
             margin-bottom: 10px;
             border-radius: 10px;
@@ -54,75 +55,70 @@
             font-size: 1.4rem;
             margin: 10px 0 5px;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .job-title {
             font-size: 0.9rem;
             opacity: 0.9;
-            font-weight: 300;
+            font-weight: 400;
         }
 
         .content {
             padding: 20px;
         }
 
-        .info-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-        }
-
-        .info-item i {
-            margin-right: 10px;
-            color: var(--primary-color);
-        }
-
         .btn-container {
             display: flex;
             flex-direction: column;
             gap: 12px;
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px;
+            padding: 14px;
             border-radius: 50px;
             text-decoration: none;
             color: white;
             font-weight: bold;
-            transition: transform 0.2s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        .btn:active {
-            transform: scale(0.95);
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
         .btn i {
-            margin-right: 10px;
+            margin-right: 12px;
+            font-size: 1.2rem;
         }
 
+        /* Colores de botones */
         .btn-whatsapp { background-color: #25d366; }
         .btn-chatbot { background-color: #00a884; }
-        .btn-catalog { background-color: #ff4b2b; }
-        .btn-web { background-color: #333; }
+        .btn-catalog { background-color: #e63946; } /* Rojo llamativo para catálogo */
+        .btn-gps { background-color: #4285F4; } /* Azul Google */
+        .btn-web { background-color: #343a40; }
         .btn-facebook { background-color: #1877f2; }
         .btn-instagram { background-color: #e4405f; }
 
         .footer {
             margin-top: 20px;
-            font-size: 0.8rem;
-            color: #777;
+            padding: 0 20px;
+            font-size: 0.85rem;
+            color: #555;
         }
 
-        .logo-vibras {
-            width: 60px;
+        .brand-highlight {
+            color: #d4af37;
+            font-weight: bold;
             margin-top: 10px;
-            opacity: 0.7;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -130,48 +126,49 @@
 
     <div class="card">
         <div class="header">
-            <img src="logodistrileco.PNG" alt="Distrileco Logo" class="logo">
+            <img src="logodistrileco.jpg" alt="Logo Distrileco" class="logo">
             <h1>Harold A. Marín M.</h1>
             <div class="job-title">Área Comercial - DISTRILECO</div>
         </div>
 
         <div class="content">
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Carrera 21 B No 13A 64, Caucasia</span>
-            </div>
-            
             <div class="btn-container">
+                
+                <a href="catalogod.pdf" target="_blank" class="btn btn-catalog">
+                    <i class="fas fa-file-pdf"></i> VER CATÁLOGO COMPLETO
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Carrera+21+B+No+13A+64+barrio+colinas+del+portal+Caucasia" target="_blank" class="btn btn-gps">
+                    <i class="fas fa-map-marker-alt"></i> VER UBICACIÓN (GPS)
+                </a>
+
                 <a href="https://wa.me/573117700431" class="btn btn-whatsapp">
                     <i class="fab fa-whatsapp"></i> WhatsApp Personal
                 </a>
 
                 <a href="https://wa.me/573206134987" class="btn btn-chatbot">
-                    <i class="fas fa-robot"></i> Chatbot Pedidos
-                </a>
-
-                <a href="https://www.distrileco.com/" target="_blank" class="btn btn-catalog">
-                    <i class="fas fa-book-open"></i> Ver Catálogo PDF
+                    <i class="fas fa-robot"></i> Chatbot de Pedidos
                 </a>
 
                 <a href="https://haroldco45.github.io/vibras-positivas-apps/distrileco/index.html" class="btn btn-web">
-                    <i class="fas fa-globe"></i> App Web Oficial
+                    <i class="fas fa-globe"></i> App Web Distrileco
                 </a>
 
-                <a href="https://www.facebook.com/share/18eizHmaUK/" class="btn btn-facebook">
+                <a href="https://www.facebook.com/share/18eizHmaUK/" target="_blank" class="btn btn-facebook">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
 
-                <a href="https://www.instagram.com/distrileco_caucasia" class="btn btn-instagram">
+                <a href="https://www.instagram.com/distrileco_caucasia" target="_blank" class="btn btn-instagram">
                     <i class="fab fa-instagram"></i> Instagram
                 </a>
+
             </div>
         </div>
 
         <div class="footer">
-            <p>Atención a Clientes y Proveedores</p>
-            <p><strong>Marcas: SUPERARROZ Y VISTAHERMOSA</strong></p>
-            <div style="font-weight: bold; color: #ffcc00;">Vibras Positivas</div>
+            <p>Atención a Clientes y Proveedores en Oficina</p>
+            <p>Marcas Propias: <strong>SUPERARROZ Y VISTAHERMOSA</strong></p>
+            <div class="brand-highlight">✨ Vibras Positivas ✨</div>
         </div>
     </div>
 
